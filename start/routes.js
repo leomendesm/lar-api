@@ -20,9 +20,10 @@ Route.get('/', () => {
   return { greeting: 'Hello world in JSON' }
 })
 
-Route.resource('users', 'UserController').middleware('auth').apiOnly()
+Route.resource('users', 'UserController').apiOnly()
 Route.resource('places', 'PlaceController').middleware('auth').apiOnly()
 Route.resource('ratings', 'RatingController').middleware('auth').apiOnly()
+Route.resource('dates', 'DateController').middleware('auth').apiOnly()
 Route.get('place/fetch/:query', 'PlaceController.fetchPlaces').middleware('auth')
 Route.get('ranking', 'RatingController.ranking').middleware('auth')
 Route.post('login', 'UserController.login')
