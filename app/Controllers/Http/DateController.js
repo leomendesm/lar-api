@@ -13,7 +13,6 @@ class DateController {
     try {
       const user = await auth.getUser()
       const data = request.only(['data']);
-      console.log(data.data);
       await data.map(async (d) => {
          await Dates.create({userId: user.id, who: d.who, birth: d.when})
       })

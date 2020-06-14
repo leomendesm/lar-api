@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../lar/.idea/lar.iml" filepath="$PROJECT_DIR$/../lar/.idea/lar.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/larApi.iml" filepath="$PROJECT_DIR$/.idea/larApi.iml" />
     </modules>
   </component>
